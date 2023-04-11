@@ -1,0 +1,65 @@
+@charset "UTF-8";
+#h_bg {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%; /* 포지션 때문에 줘야됨. 인라인으로 인식되어서는 아님. */
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+#h_bg header {
+  width: 1224px;
+  height: 104px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#h_bg header .right nav a {
+  margin-left: 10px;
+}
+#h_bg header .right nav a:hover {
+  color: #189bfa;
+}
+#h_bg header .right nav a:last-child:hover {
+  color: #fff;
+  background: #ff5252;
+}
+#h_bg header .right nav a:nth-child(1) {
+  margin: 0;
+}
+#h_bg header .right nav a:nth-child(2) {
+  background: url(../images/banner_gray2.png) no-repeat;
+  padding-left: 30px;
+  background-size: 25px;
+}
+#h_bg header .right nav a:nth-child(3)::before {
+  background: url(../images/language.png) no-repeat;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+#h_bg header .right nav a:nth-child(4) i {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+#h_bg header .right nav .all_nav {
+  color: #fff;
+  background: #189bfa url(../images/allMenu.png) no-repeat 5px center;
+  padding: 10px 5px 10px 0px;
+}
+#h_bg header .right nav .all_nav::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: 0;
+}/*# sourceMappingURL=common.css.map */

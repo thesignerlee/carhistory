@@ -1,0 +1,50 @@
+//색상변수
+$point1: #189bfa;
+$point2:#ff5252;
+$star:#ff9e06;
+$bg1:#eee;
+$bg2:#fff;
+$txt1:#aaa;
+$txt2:#222;
+$txt3:#000;
+//common.css 통합 = Header, Footer Design
+//main.css = Main Design
+//responsive.css = 반응형 Design
+#h_bg {
+    background: $bg2; position:fixed; left:0; top:0; z-index:999; width:100%;/* 포지션 때문에 줘야됨. 인라인으로 인식되어서는 아님. */
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    header {
+        width:1224px; height:104px; margin: 0 auto;
+        display: flex; justify-content: space-between; align-items: center;
+        h1 {
+            a {
+                img {}
+            }
+        }
+        .right {
+            nav {
+                a {margin-left: 10px;}
+                a:hover {color:$point1;}
+                a:last-child:hover {color:$bg2; background: $point2;}
+                a:nth-child(1) {margin:0;}
+                a:nth-child(2) {
+                    background:url(../images/banner_gray2.png) no-repeat; padding-left: 30px;
+                    background-size: 25px;
+                }
+                a:nth-child(3) {}
+                a:nth-child(3)::before {
+                    background:url(../images/language.png) no-repeat; content: ''; width:20px; height: 20px;
+                    background-size: 20px;
+                    display: inline-block; position: relative; top:3px; margin-right:5px;}
+                a:nth-child(4) {
+                    i{font-weight: 600; font-size: 1.3rem;}
+                }
+                // a:nth-child(4)::before {content:'\f002'; display:inline-block; width:32px; height:32px; font-weight: 600;}
+                .all_nav {color:$bg2; background: $point1 url(../images/allMenu.png) no-repeat 5px center;
+                padding: 10px 5px 10px 0px;
+                }
+                .all_nav::before { content: ''; width:32px; height: 32px; display: inline-block; position: relative; top:0px; left:0;}
+            }
+        }
+    }
+}
