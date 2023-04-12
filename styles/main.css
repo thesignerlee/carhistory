@@ -1,12 +1,10 @@
 @charset "UTF-8";
-main {
-  background: url(../images/hero-bg-md-01.gif) center;
-  height: 100vh;
-  background-size: cover;
-}
 main #visual {
-  width: 1224px;
+  width: 100%;
   margin: 0 auto;
+  height: 100vh;
+  background: url(../images/hero-bg-md-01.gif) center;
+  background-size: cover;
 }
 main #visual h1 {
   padding-top: 300px;
@@ -55,9 +53,9 @@ main #visual .category a:last-child {
 }
 main #visual .view_box {
   background: rgba(0, 0, 0, 0.4);
-  width: 85%;
+  width: 1000px;
   padding: 30px;
-  margin: 0 auto;
+  margin: 0 auto 300px;
   padding: 30px;
 }
 main #visual .view_box #viewFrm fieldset {
@@ -126,4 +124,128 @@ main #visual .view_box .list .sample_view::before {
   position: absolute;
   left: 10px;
   top: 9px;
+}
+main .container {
+  width: 1224px;
+  margin: 0 auto;
+  padding: 100px 0 0;
+  text-align: center;
+}
+main .container .sub_title {
+  position: relative;
+  font-size: 0.9rem;
+}
+main .container .sub_title::after {
+  content: "";
+  background-color: #222;
+  width: 20px;
+  height: 2px;
+  display: block;
+  margin: 10px auto 20px;
+}
+main .container h1 {
+  margin: 40px 0 30px;
+  font-size: 1.8rem;
+}
+main .container .contents {
+  color: #222;
+}
+main #video .tab {
+  display: flex;
+  justify-content: center;
+}
+main #video .tab a {
+  margin-left: 50px;
+  width: 130px;
+  padding: 25px 0;
+  margin: 30px 0;
+  background: beige;
+}
+main #video .tab a:first-child {
+  border-bottom: 4px solid #189bfa;
+}
+main #video .tab_contents .tab1 {
+  position: relative;
+}
+main #video .tab_contents .tab1 video {
+  width: 85%;
+}
+main #video .tab_contents .tab1 .img {
+  position: absolute;
+  right: 0px;
+  top: 200px;
+}
+main #video .tab_contents .tab2 p {
+  background: lime;
+  padding: 200px 0;
+}
+main #menu .tab {
+  display: flex;
+  justify-content: center;
+  border-bottom: #222 1px solid;
+  margin: 30px 0;
+}
+main #menu .tab a {
+  width: 125px;
+  height: 50px;
+  background: #fff;
+  line-height: 50px;
+  border: 1px solid #222;
+  margin-left: 15px;
+  position: relative;
+  bottom: -1px;
+}
+main #menu .tab a:first-child {
+  margin-left: 0;
+  border-left: #000 1px solid;
+  border-right: #000 1px solid;
+  border-bottom: 0;
+}
+main #menu .tab a:first-child::before {
+  content: "";
+  display: block;
+  background: #189bfa;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+main #menu .tab_contents {
+  text-align: start;
+}
+main #menu .tab_contents .tab1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "title sub_title", "big_img list", "intro .";
+}
+main #menu .tab_contents .tab1 h2 {
+  grid: "title";
+  font-size: 1.2rem;
+}
+main #menu .tab_contents .tab1 h2:first-child {
+  color: #189bfa;
+  font-size: 1.5rem;
+}
+main #menu .tab_contents .tab1 h2 + h2 {
+  grid: "sub_title";
+}
+main #menu .tab_contents .tab1 .big {
+  grid: "big_img";
+}
+main #menu .tab_contents .tab1 .big img {
+  width: 90%;
+}
+main #menu .tab_contents .tab1 ul {
+  grid: "list";
+}
+main #menu .tab_contents .tab1 ul li:nth-child(2) h3 {
+  border-top: 1px dashed #000;
+  border-bottom: 1px dashed #000;
+}
+main #menu .tab_contents .tab1 .intro {
+  grid: "intro";
+}
+main #menu .tab_contents .tab2, main #menu .tab_contents .tab3, main #menu .tab_contents .tab4 {
+  background: pink;
+  padding: 250px 0;
 }/*# sourceMappingURL=main.css.map */

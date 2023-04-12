@@ -25,7 +25,7 @@ $txt3:#000;
             nav {
                 a {margin-left: 10px;}
                 a:hover {color:$point1;}
-                a:last-child:hover {color:$bg2; background: $point2;}
+                a:last-child:hover {color:$bg2; background: $point2 url(../images/allMenu.png) no-repeat 5px center;}
                 a:nth-child(1) {margin:0;}
                 a:nth-child(2) {
                     background:url(../images/banner_gray2.png) no-repeat; padding-left: 30px;
@@ -41,9 +41,8 @@ $txt3:#000;
                 }
                 // a:nth-child(4)::before {content:'\f002'; display:inline-block; width:32px; height:32px; font-weight: 600;}
                 .all_nav {color:$bg2; background: $point1 url(../images/allMenu.png) no-repeat 5px center;
-                padding: 10px 5px 10px 0px;
+                padding: 10px 5px 10px 30px;
                 }
-                .all_nav::before { content: ''; width:32px; height: 32px; display: inline-block; position: relative; top:0px; left:0;}
             }
         }
     }

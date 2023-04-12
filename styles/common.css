@@ -24,7 +24,7 @@
 }
 #h_bg header .right nav a:last-child:hover {
   color: #fff;
-  background: #ff5252;
+  background: #ff5252 url(../images/allMenu.png) no-repeat 5px center;
 }
 #h_bg header .right nav a:nth-child(1) {
   margin: 0;
@@ -52,14 +52,5 @@
 #h_bg header .right nav .all_nav {
   color: #fff;
   background: #189bfa url(../images/allMenu.png) no-repeat 5px center;
-  padding: 10px 5px 10px 0px;
-}
-#h_bg header .right nav .all_nav::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  position: relative;
-  top: 0px;
-  left: 0;
+  padding: 10px 5px 10px 30px;
 }/*# sourceMappingURL=common.css.map */

@@ -60,8 +60,67 @@
                     <a href="#" class="sample_view">샘플 보고서 보기</a>
                 </div>
             </div>
-        </div>
+        </div><!-- visual:e -->
+        <div id="video" class="container">
+            <p class="sub_title">VIDEO</p>
+            <h1>카히스토리 영상</h1>
+            <p class="contents">영상을 통해 카히스토리 사용방법 등 자세한 정보를 확인해보세요.</p>
+            <div class="tab">
+                <a href="#">안내</a>
+                <a href="#">사용방법</a>
+            </div>
+            <div class="tab_contents">
+                <div class="tab1">
+                    <video src="./videos/carhistory.mp4" autoplay muted auto loop></video>
+                    <div class="img"><img src="./images/video.png" alt=""></div>
+                </div> <!-- 안내 내용 -->
+                <div class="tab2"><p>사용방법안내</p></div> <!-- 방법 내용 -->
+            </div>
+        </div> <!-- video -->
+        <div id="menu" class="container">
+            <p class="sub_title">MENU</p>
+            <h1>자주 사용하는 메뉴</h1>
+            <p class="contents">자주 사용하는 메뉴로 카히스토리를 보다 편리하게 이용하세요.</p>
+            <div class="tab">
+                <a href="#">사고이력조회</a>
+                <a href="#">정보이용료</a>
+                <a href="#">조회방법</a>
+                <a href="#">용어설명</a>
+            </div>
+            <div class="tab_contents">
+                <div class="tab1">
+                    <h2>사고이력 조회 &gt;</h2>
+                    <h2>왜 사고이력조회가 필수인가?</h2>
+                    <p class="big"><img src="./images/car-new.png" alt=""></p>
+                    <ul>
+                        <li>
+                            <p class="num">01</p>
+                            <h3>평균 사고 건수 2.93건(2016년 카히스토리 조회 차량 기준)</h3>
+                        </li>
+                        <li>
+                            <p class="num">02</p>
+                            <h3>운전자의 안전을 위협하는 침수, 전손 확인</h3>
+                        </li>
+                        <li>
+                            <p class="num">03</p>
+                            <h3>허위 매물 방지</h3>
+                        </li>
+                    </ul>
+                    <div class="intro">
+                        <p>관련메뉴</p>
+                        <p>-조회가 원활하게 안되시나요? <a href="#">고객문의 바로가기 &gt;</a></p>
+                    </div>
+                </div>
+                <div class="tab2">정보이용료 내용</div>
+                <div class="tab3">조회방법 내용</div>
+                <div class="tab4">용어설명 내용</div>
+            </div>
+        </div> <!-- menu -->
     </main>
     <script src="./script/script.js"></script>
 </body>
 </html>
+<!-- a를 임시링크로 만드는 이유
+1. 페이지 이동 주소가 미완성되었기 때문
+2. 이동페이지x, JS에 동적기능을 부여하기 위해
+=> 자바에서 스크롤 올라가는 기능을 막기 -->
